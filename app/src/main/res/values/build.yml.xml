@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources></resources>
+
+name: Build APK
+
+on: [push]
+
+    jobs:
+    test:
+    runs-on: ubuntu-latest
+
+    steps:
+    -name: Set up JDK
+    uses: action/setup-java@v2
+    with:
+    distribution:'adopt'
+    java-version:'11'
+
+    -name: Check out code
+    uses: actions/checkout@v2
+
+-name: Build APK
+run: ./gradlew assembleDebug
