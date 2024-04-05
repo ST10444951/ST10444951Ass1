@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ST1044951Ass1</string>
+    <string name="compare">compare</string>
+    <string name="compareButton">compare</string>
+    <string name="todo">TODO</string>
+    <string name="my_history_app">my_history_app</string>
+    <string name="EnterAge">Age</string>
+</resources>
